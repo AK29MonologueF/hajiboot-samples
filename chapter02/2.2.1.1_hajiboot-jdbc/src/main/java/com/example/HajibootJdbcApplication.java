@@ -11,6 +11,7 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 @SpringBootApplication
 public class HajibootJdbcApplication implements CommandLineRunner {
 
+	//Autoconfigure という仕組みでAutowiered できる.Component として指定してないのに使える理由
 	@Autowired
 	NamedParameterJdbcTemplate jdbcTemplate;
 

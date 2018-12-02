@@ -13,6 +13,7 @@ public class CustomerRepository {
     private final ConcurrentMap<Integer, Customer> customerMap = new ConcurrentHashMap<>();
 
     public List<Customer> findAll() {
+    	//customerMap.values() はCollection<Customer> を返す
         return new ArrayList<>(customerMap.values());
     }
 
